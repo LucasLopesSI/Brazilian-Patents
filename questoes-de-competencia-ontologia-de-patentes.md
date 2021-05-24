@@ -8,7 +8,6 @@ Questões de competência avaliadas:
 - Quais instituições registram mais patentes?
 - Em quais áreas tecnológicas são produzidas mais patentes?
 - Qual a classificação científica de uma patente?
-- As universidades que mais contribuem com a produção tecnológica?
 - Qual a nacionalidade das empresas que registram patentes no Brasil?
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
