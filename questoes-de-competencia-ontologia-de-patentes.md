@@ -71,7 +71,6 @@ A consulta acima em SPARQL retorna as entidades que representam requerentes de p
 
 |<p>PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>           </p><p>PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#></p><p>PREFIX dbo: <http://dbpedia.org/ontology/></p><p></p><p>select ?company ?label ?country</p><p>where{</p><p>`  `?company rdf:type dbo:Company;</p><p>`  		 `rdfs:label ?label.</p><p>`   `{</p><p>`     `?company dbo:country ?country.</p><p>`   `}UNION{</p><p>`     `?company dbp:locationCountry ?country.</p><p>`   `}UNION{</p><p>`     `?company dbo:regionServed ?country.</p><p>`   `}UNION{</p><p>`     `?company dbp:hqLocationCountry ?country.</p><p>`   `}UNION{</p><p>`     `?company dbo:location ?country.</p><p>`   `}</p><p>`  `FILTER((lang(?label) = 'en' || lang(?label) = 'pt'))</p><p>}</p>|
 | :- |
-`	`
 Essa outra query, realizada no dbpedia, retorna as informações das empresas associadas aos países de origem em formato tabular. A determinação da nacionalidade de um requerente de patente se dá por meio da operação *inner join* entre a coluna *applicant* da tabela resultante da primeira query e a coluna *company* da outra tabela.
 
 Para realizar o mapeamento da nacionalidade dos requerentes de patentes, utilizamos a ferramenta Google GeoChart* [7] para construção de mapas:
